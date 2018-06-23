@@ -67,8 +67,9 @@ func main() {
 var db *mgo.Session
 
 func dialdb(url string) error {
+	var err error
 	log.Println("dialing mongodb: " + url)
-	db, err := mgo.Dial(url)
+	db, err = mgo.Dial(url)
 	return err
 }
 

@@ -89,7 +89,7 @@ func makeRequest(req *http.Request, params url.Values) (*http.Response, error) {
 		}
 	})
 	formEnc := params.Encode()
-	req.Header.Set("Content-Type", "application/x-www-form- urlencoded")
+	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	req.Header.Set("Content-Length", strconv.Itoa(len(formEnc)))
 	req.Header.Set("Authorization", authClient.AuthorizationHeader(creds,
 		"POST",
