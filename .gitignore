@@ -18,5 +18,6 @@ debug
 .DS_Store
 */.DS_Store
 
-# uploaded avatars
-avatars/
+
+counter/counter
+twittervotes/twittervotes
